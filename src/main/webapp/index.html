@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Mail Application</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+    <h1>Email App</h1>
+      <form
+        action="Mail"
+        method="post"
+        enctype="multipart/form-data"
+        class="my-2"
+      >
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupFileAddon01"
+              >Select Excel File with Emails</span
+            >
+          </div>
+          <div class="custom-file">
+            <input
+              type="file"
+              size="60"
+              name="file1"
+              class="custom-file-input"
+              id="inputGroupFile01"
+              aria-describedby="inputGroupFileAddon01"
+            />
+            <label class="custom-file-label" for="inputGroupFile01"
+              >Choose file</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>From</label>
+          <input type="text" name="from" class="form-control" value="demosplash1@gmail.com" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="pword" class="form-control" value="Splash@123" />
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <textarea
+            name="sub"
+            class="form-control"
+            cols="20"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label>Text</label>
+          <textarea
+            name="msg"
+            class="form-control"
+            cols="70"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <input type="submit" value="Send" class="btn btn-primary btn-block" />
+      </form>
+      <h5>NOTE:</h5>
+      <h6>*Name of column which contains emails in excel should be 'Email'.</h6>
+      <h6>*Please wait till loading is complete.</h6>
+      <h6>*Result excel will download after sending all mails is done.</h6>
+      
+    </div>
+  </body>
+</html>
