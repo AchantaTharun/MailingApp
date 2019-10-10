@@ -1,0 +1,1 @@
+web: bundle exec mail-sender-excel server -p $PORT
