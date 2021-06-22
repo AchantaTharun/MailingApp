@@ -1,1 +1,1 @@
-web: bundle exec mail-sender-excel server -p $PORT
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.mail.app
